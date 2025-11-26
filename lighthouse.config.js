@@ -5,7 +5,7 @@ module.exports = {
 
  'first-contentful-paint',
  'largest-contentful-paint',
- 'first-meaningful-paint',
+ // 'first-meaningful-paint',   <-- removed (invalid in modern Lighthouse)
  'speed-index',
  'interactive',
  'total-blocking-time',
@@ -66,7 +66,7 @@ module.exports = {
  auditRefs: [
  { id: 'first-contentful-paint', weight: 10 },
  { id: 'largest-contentful-paint', weight: 25 },
- { id: 'first-meaningful-paint', weight: 10 },
+ // { id: 'first-meaningful-paint', weight: 10 },  <-- removed
  { id: 'speed-index', weight: 10 },
  { id: 'interactive', weight: 10 },
  { id: 'total-blocking-time', weight: 30 },

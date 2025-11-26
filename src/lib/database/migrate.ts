@@ -1,4 +1,6 @@
-
+import dotenv from "dotenv";
+dotenv.config({ path: ".env.local" });
+console.log("Loaded DATABASE_URL:", process.env.DATABASE_URL);
 
 import { migrate } from 'drizzle-orm/neon-serverless/migrator'
 import { db, closeDatabaseConnection } from './connection'
