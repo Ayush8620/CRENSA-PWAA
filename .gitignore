@@ -264,3 +264,5 @@ tramp
 /public/images/temp/
 *.local.json
 config.local.js
+# clerk configuration (can include secrets)
+/.clerk/
