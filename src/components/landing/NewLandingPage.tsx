@@ -29,15 +29,12 @@ export default function NewLandingPage() {
  <main id="main-content" className="min-h-screen pt-16 md:pt-20">
  {}
  <ContentErrorBoundary sectionName="featured-hero">
- <FeaturedHeroSection className="bg-transparent" />
+ <FeaturedHeroSection />
  </ContentErrorBoundary>
 
  {}
  <ContentErrorBoundary sectionName="must-sees">
- <MustSeesSection
- limit={10}
- className="bg-white/50 backdrop-blur-sm"
- />
+ <MustSeesSection limit={10} />
  </ContentErrorBoundary>
 
  {}

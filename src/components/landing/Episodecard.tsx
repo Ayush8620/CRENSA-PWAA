@@ -21,13 +21,16 @@ export default function EpisodeCard({
             className="flex flex-col w-[150px] sm:w-[170px] cursor-pointer group"
         >
             {/* Thumbnail */}
-            <div className="relative w-full h-[210px] rounded-xl overflow-hidden shadow-md">
-                <Image
-                    src={thumbnail}
-                    alt={title}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
-                />
+            <div className="relative w-full pb-[160%] rounded-xl overflow-hidden shadow-md bg-black">
+                <div className="absolute inset-0">
+                    <Image
+                        src={thumbnail}
+                        alt={title}
+                        fill
+                        className="object-cover group-hover:scale-105 transition-transform duration-300"
+                        sizes="(max-width: 768px) 150px, 170px"
+                    />
+                </div>
             </div>
 
             {/* Title */}

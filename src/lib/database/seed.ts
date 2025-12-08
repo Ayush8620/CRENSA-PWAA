@@ -101,7 +101,7 @@ export async function seedDatabase() {
  email: 'creator1@example.com',
  username: 'creative_creator',
  role: 'creator',
- avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face'
+ avatar: ''
  }).returning()
  const creator1 = (creator1Result as any[])[0]
 
@@ -109,8 +109,7 @@ export async function seedDatabase() {
  clerkId: 'user_creator_2',
  email: 'creator2@example.com',
  username: 'amazing_artist',
- role: 'creator',
- avatar: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face'
+ role: 'creator'
  }).returning()
  const creator2 = (creator2Result as any[])[0]
 
@@ -119,7 +118,7 @@ export async function seedDatabase() {
  email: 'member1@example.com',
  username: 'video_lover',
  role: 'member',
- avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face'
+ avatar: ''
  }).returning()
  const member1 = (member1Result as any[])[0]
 
@@ -128,7 +127,6 @@ export async function seedDatabase() {
  email: 'member2@example.com',
  username: 'content_fan',
  role: 'member',
- avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face'
  }).returning()
  const member2 = (member2Result as any[])[0]
 
@@ -183,7 +181,7 @@ export async function seedDatabase() {
  title: 'Creative Process Behind My Latest Art',
  description: 'Join me as I walk through my creative process for this stunning digital artwork.',
  videoUrl: 'https://example.com/videos/creative-process-1.mp4',
- thumbnailUrl: 'https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=400&h=300&fit=crop',
+ thumbnailUrl: '',
  duration: 180,
  creditCost: '2.50',
  coinPrice: 50,
@@ -198,7 +196,7 @@ export async function seedDatabase() {
  title: 'Quick Tips for Better Composition',
  description: 'Learn essential composition techniques that will improve your artwork instantly.',
  videoUrl: 'https://example.com/videos/composition-tips.mp4',
- thumbnailUrl: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=400&h=300&fit=crop',
+ thumbnailUrl: '',
  duration: 120,
  creditCost: '1.75',
  coinPrice: 35,
@@ -213,7 +211,7 @@ export async function seedDatabase() {
  title: 'Digital Painting Masterclass',
  description: 'Complete guide to digital painting techniques for beginners and advanced artists.',
  videoUrl: 'https://example.com/videos/digital-painting.mp4',
- thumbnailUrl: 'https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=400&h=300&fit=crop',
+ thumbnailUrl: '',
  duration: 300,
  creditCost: '3.00',
  coinPrice: 60,
@@ -228,7 +226,7 @@ export async function seedDatabase() {
  title: 'Color Theory Fundamentals',
  description: 'Understanding color theory to create more impactful and harmonious artwork.',
  videoUrl: 'https://example.com/videos/color-theory.mp4',
- thumbnailUrl: 'https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=400&h=300&fit=crop',
+ thumbnailUrl: '',
  duration: 240,
  creditCost: '2.25',
  coinPrice: 45,

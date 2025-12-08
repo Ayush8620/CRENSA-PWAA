@@ -144,7 +144,7 @@ export default function MustSeesSection({
                 </div>
 
                 { }
-                <Marquee pauseOnHover className="[--duration:60s] [--gap:3rem]">
+                <Marquee pauseOnHover className="[--duration:60s] [--gap:1rem]">
                     {videos.map((video) => (
                         <EpisodeCard
                             key={video.id}
